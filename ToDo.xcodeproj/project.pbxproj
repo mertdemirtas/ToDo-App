@@ -247,7 +247,6 @@
 			);
 			mainGroup = 40470625270AF3C70004FCE2;
 			packageReferences = (
-				40A18E16271F59FC00254C9F /* XCRemoteSwiftPackageReference "Hero" */,
 			);
 			productRefGroup = 4047062F270AF3C70004FCE2 /* Products */;
 			projectDirPath = "";
@@ -516,17 +515,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		40A18E16271F59FC00254C9F /* XCRemoteSwiftPackageReference "Hero" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/HeroTransitions/Hero.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCVersionGroup section */
 		4047063A270AF3C70004FCE2 /* ToDo.xcdatamodeld */ = {
