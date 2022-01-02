@@ -11,7 +11,10 @@ class ToDoListViewController: UIViewController, ToDoListViewProtocol {
 
 
     @IBOutlet weak var doneCount: UILabel!
+    @IBOutlet weak var doneLabel: UILabel!
+    
     @IBOutlet weak var toDoCount: UILabel!
+    @IBOutlet weak var toDoLabel: UILabel!
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -37,6 +40,12 @@ class ToDoListViewController: UIViewController, ToDoListViewProtocol {
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        doneCount.font = UIFont(name: "ChalkboardSE-Bold", size: 28)
+        doneLabel.font = UIFont(name: "ChalkboardSE-Bold", size: 28)
+        
+        toDoCount.font = UIFont(name: "ChalkboardSE-Bold", size: 28)
+        toDoLabel.font = UIFont(name: "ChalkboardSE-Bold", size: 28)
         
     }
     
@@ -72,6 +81,13 @@ class ToDoListViewController: UIViewController, ToDoListViewProtocol {
 }
 
 extension ToDoListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 30
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 125
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.section{
             case 0:

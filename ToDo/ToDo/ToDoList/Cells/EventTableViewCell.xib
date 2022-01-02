@@ -11,39 +11,49 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoListTableViewCell" rowHeight="50" id="KGk-i7-Jjw" customClass="EventTableViewCell" customModule="ToDo" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="380" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoListTableViewCell" rowHeight="81" id="KGk-i7-Jjw" customClass="EventTableViewCell" customModule="ToDo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="399" height="75"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="380" height="44"/>
+                <rect key="frame" x="0.0" y="0.0" width="399" height="75"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jry-Cn-8GF">
-                        <rect key="frame" x="0.0" y="0.0" width="380" height="44"/>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jry-Cn-8GF">
+                        <rect key="frame" x="0.0" y="0.0" width="399" height="75"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pX2-Bx-bwk">
-                                <rect key="frame" x="16" y="8" width="108" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pX2-Bx-bwk">
+                                <rect key="frame" x="16" y="8" width="150" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="EHt-mX-UVk"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="Ohl-du-8Kx">
-                                <rect key="frame" x="132" y="14" width="240" height="17"/>
+                                <rect key="frame" x="191" y="14" width="200" height="48"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="grB-tG-7Af"/>
+                                    <constraint firstAttribute="width" constant="200" id="8jz-2f-ic7"/>
                                 </constraints>
+                                <locale key="locale" localeIdentifier="tr_TR"/>
                             </datePicker>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
-                            <constraint firstItem="Ohl-du-8Kx" firstAttribute="top" secondItem="Jry-Cn-8GF" secondAttribute="top" constant="14" id="3n0-mD-ApZ"/>
-                            <constraint firstAttribute="trailing" secondItem="Ohl-du-8Kx" secondAttribute="trailing" constant="8" id="Kk9-T5-DXX"/>
-                            <constraint firstItem="pX2-Bx-bwk" firstAttribute="leading" secondItem="Jry-Cn-8GF" secondAttribute="leading" constant="16" id="OD8-qZ-AeJ"/>
-                            <constraint firstItem="pX2-Bx-bwk" firstAttribute="top" secondItem="Jry-Cn-8GF" secondAttribute="top" constant="8" id="ZUz-OZ-btB"/>
-                            <constraint firstItem="Ohl-du-8Kx" firstAttribute="leading" secondItem="pX2-Bx-bwk" secondAttribute="trailing" constant="8" symbolic="YES" id="Zal-f3-JOC"/>
-                            <constraint firstAttribute="bottom" secondItem="pX2-Bx-bwk" secondAttribute="bottom" constant="8" id="i6i-Or-aW5"/>
-                            <constraint firstAttribute="bottom" secondItem="Ohl-du-8Kx" secondAttribute="bottom" constant="13" id="p8G-4o-CEj"/>
+                            <constraint firstAttribute="bottom" secondItem="pX2-Bx-bwk" secondAttribute="bottom" constant="8" id="19l-BN-Kbb"/>
+                            <constraint firstItem="pX2-Bx-bwk" firstAttribute="top" secondItem="Jry-Cn-8GF" secondAttribute="top" constant="8" id="4eX-Z8-reK"/>
+                            <constraint firstAttribute="trailing" secondItem="Ohl-du-8Kx" secondAttribute="trailing" constant="8" id="QJD-Ty-X3n"/>
+                            <constraint firstItem="pX2-Bx-bwk" firstAttribute="leading" secondItem="Jry-Cn-8GF" secondAttribute="leading" constant="16" id="WCB-jz-q7e"/>
+                            <constraint firstAttribute="bottom" secondItem="Ohl-du-8Kx" secondAttribute="bottom" constant="13" id="Xj0-9W-m5D"/>
+                            <constraint firstItem="Ohl-du-8Kx" firstAttribute="top" secondItem="Jry-Cn-8GF" secondAttribute="top" constant="14" id="opz-V5-JPe"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
                 <constraints>
@@ -59,12 +69,12 @@
                 <outlet property="cellDate" destination="Ohl-du-8Kx" id="izs-GE-X0H"/>
                 <outlet property="cellTitle" destination="pX2-Bx-bwk" id="LPx-pA-Eno"/>
             </connections>
-            <point key="canvasLocation" x="173.91304347826087" y="166.74107142857142"/>
+            <point key="canvasLocation" x="187.68115942028987" y="177.12053571428569"/>
         </tableViewCell>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
