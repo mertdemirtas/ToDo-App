@@ -32,8 +32,6 @@
 		40A18E11271E08C900254C9F /* EventDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A18E10271E08C900254C9F /* EventDetailViewModel.swift */; };
 		40A18E13271E092200254C9F /* EventDetailPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A18E12271E092200254C9F /* EventDetailPresentation.swift */; };
 		40A18E15271E09FE00254C9F /* EventDetailContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A18E14271E09FE00254C9F /* EventDetailContracts.swift */; };
-		40A18E18271F59FC00254C9F /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = 40A18E17271F59FC00254C9F /* Hero */; };
-		40A18E19272106BA00254C9F /* Hero in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 40A18E17271F59FC00254C9F /* Hero */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		40A9DD5C272366230066B9D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A9DD5B272366230066B9D8 /* Images.xcassets */; };
 		40D30587270DEF9D00CAEE28 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D30586270DEF9D00CAEE28 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
@@ -45,7 +43,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				40A18E19272106BA00254C9F /* Hero in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,7 +86,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40A18E18271F59FC00254C9F /* Hero in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +217,6 @@
 			);
 			name = ToDo;
 			packageProductDependencies = (
-				40A18E17271F59FC00254C9F /* Hero */,
 			);
 			productName = ToDo;
 			productReference = 4047062E270AF3C70004FCE2 /* ToDo.app */;
@@ -532,14 +527,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		40A18E17271F59FC00254C9F /* Hero */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 40A18E16271F59FC00254C9F /* XCRemoteSwiftPackageReference "Hero" */;
-			productName = Hero;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		4047063A270AF3C70004FCE2 /* ToDo.xcdatamodeld */ = {
