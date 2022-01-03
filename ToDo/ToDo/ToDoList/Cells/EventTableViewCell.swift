@@ -11,6 +11,7 @@ class EventTableViewCell: UITableViewCell {
 
     @IBOutlet weak var cellTitle: UILabel!
     @IBOutlet weak var cellDate: UIDatePicker!
+    @IBOutlet weak var cellView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,7 +22,7 @@ class EventTableViewCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         //set the values for top,left,bottom,right margins
-        let margins = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)
+        let margins = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
         contentView.frame = contentView.frame.inset(by: margins)
     }
 

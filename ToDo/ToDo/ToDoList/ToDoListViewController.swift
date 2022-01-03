@@ -180,10 +180,12 @@ extension ToDoListViewController: UITableViewDataSource {
             case 0:
                 cell.cellTitle.text = eventsWithSections[indexPath.section][indexPath.row].title
                 cell.cellDate.date = eventsWithSections[indexPath.section][indexPath.row].date
+                cell.cellView.backgroundColor = UIColor.systemBlue
                 return cell
             case 1:
                 cell.cellTitle.text = eventsWithSections[indexPath.section][indexPath.row].title
                 cell.cellDate.date = eventsWithSections[indexPath.section][indexPath.row].date
+                cell.cellView.backgroundColor = UIColor.systemIndigo
                 return cell
             default:
                 return cell
