@@ -13,12 +13,11 @@ protocol NotificationManagerProtocol{
     func scheduleNotification(data: EventModel)
     func updateNotification(data: EventModel)
     func dateFormat(date: Date) -> String
- 
 }
+
 class LocalNotificationManager: NotificationManagerProtocol , ObservableObject {
     
     static let shared = LocalNotificationManager()
-    
       
     func dateFormat(date: Date) -> String {
         let dateFormatter = DateFormatter()
@@ -65,7 +64,6 @@ class LocalNotificationManager: NotificationManagerProtocol , ObservableObject {
     func updateNotification(data: EventModel){
         removeScheduledNotification(data: ToDoListPresentation(event: data))
         scheduleNotification(data: data)
-
      }
 }
 

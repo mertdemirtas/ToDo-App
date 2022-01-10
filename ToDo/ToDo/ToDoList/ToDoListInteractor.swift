@@ -43,7 +43,6 @@ class ToDoListInteractor: NSObject, ToDoListInteractorProtocol {
                 self.delegate?.handleOutput(.showEventDetail(element))
             }
         }
-
     }
     
     func updateEventIsDone(Data: ToDoListPresentation) {

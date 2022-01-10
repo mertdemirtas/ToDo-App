@@ -16,7 +16,6 @@ class EventDetailViewModel: NSObject, EventDetailViewModelProtocol {
     private let titleCheck: Bool
     private let createdDate: Date
     private let NotificationManager: LocalNotificationManager
-
     
     init(event: EventModel) {
         self.event = event
@@ -31,7 +30,6 @@ class EventDetailViewModel: NSObject, EventDetailViewModelProtocol {
     }
     
     func currentDate() -> Date {
-
         return Date()
     }
     
@@ -45,7 +43,7 @@ class EventDetailViewModel: NSObject, EventDetailViewModelProtocol {
             return (UIColor.darkGray, false)
         }
         else{
-            return (UIColor.systemBlue, true)}
+            return (UIColor.white, true)}
     }
     
     func dataControl(event: EventModel){
@@ -59,6 +57,7 @@ class EventDetailViewModel: NSObject, EventDetailViewModelProtocol {
             CoreDataManager.addData(Data: eventModel)
             NotificationManager.scheduleNotification(data: eventModel)
             break
+            
         case .updateEvent(var eventModel):
             eventModel.createDate = self.createdDate
             CoreDataManager.updateData(Data: eventModel)

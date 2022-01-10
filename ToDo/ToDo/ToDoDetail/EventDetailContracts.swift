@@ -20,7 +20,6 @@ protocol EventDetailViewModelProtocol {
     func currentDate() -> Date
 //    func addButtonLoad() -> Bool
     func eventComparisionForUpdate(liveData: EventDetailPresentation) -> (UIColor, Bool)
-    
 }
 
 enum ToDoAdd{

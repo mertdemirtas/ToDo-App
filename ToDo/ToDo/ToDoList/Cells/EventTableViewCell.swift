@@ -17,8 +17,10 @@ class EventTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         cellTitle.font = UIFont(name: "ChalkboardSE-Bold", size: 20)
-        
+        cellDate.backgroundColor = .clear
+        cellDate.overrideUserInterfaceStyle = .light
     }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         //set the values for top,left,bottom,right margins
@@ -28,8 +30,7 @@ class EventTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        self.selectionStyle = .none
     }
     
 }

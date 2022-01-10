@@ -30,24 +30,37 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="Ohl-du-8Kx">
-                                <rect key="frame" x="191" y="14" width="200" height="48"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ut6-Ph-hDs">
+                                <rect key="frame" x="161" y="8" width="230" height="59"/>
+                                <subviews>
+                                    <datePicker userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" datePickerMode="dateAndTime" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="Ohl-du-8Kx">
+                                        <rect key="frame" x="30" y="16" width="200" height="27"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="hNR-DE-x2F"/>
+                                        </constraints>
+                                        <locale key="locale" localeIdentifier="tr_TR"/>
+                                    </datePicker>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="8jz-2f-ic7"/>
+                                    <constraint firstAttribute="width" constant="230" id="Ru7-ak-LDu"/>
+                                    <constraint firstItem="Ohl-du-8Kx" firstAttribute="top" secondItem="Ut6-Ph-hDs" secondAttribute="top" constant="16" id="Wxz-y9-W28"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ohl-du-8Kx" secondAttribute="trailing" id="esF-Ng-COR"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ohl-du-8Kx" secondAttribute="bottom" constant="16" id="lgn-F3-cn9"/>
                                 </constraints>
-                                <locale key="locale" localeIdentifier="tr_TR"/>
-                            </datePicker>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="pX2-Bx-bwk" secondAttribute="bottom" constant="8" id="19l-BN-Kbb"/>
+                            <constraint firstItem="Ut6-Ph-hDs" firstAttribute="top" secondItem="Jry-Cn-8GF" secondAttribute="top" constant="8" id="3ID-0t-H2J"/>
                             <constraint firstItem="pX2-Bx-bwk" firstAttribute="top" secondItem="Jry-Cn-8GF" secondAttribute="top" constant="8" id="4eX-Z8-reK"/>
-                            <constraint firstAttribute="trailing" secondItem="Ohl-du-8Kx" secondAttribute="trailing" constant="8" id="QJD-Ty-X3n"/>
                             <constraint firstItem="pX2-Bx-bwk" firstAttribute="leading" secondItem="Jry-Cn-8GF" secondAttribute="leading" constant="16" id="WCB-jz-q7e"/>
-                            <constraint firstAttribute="bottom" secondItem="Ohl-du-8Kx" secondAttribute="bottom" constant="13" id="Xj0-9W-m5D"/>
-                            <constraint firstItem="Ohl-du-8Kx" firstAttribute="top" secondItem="Jry-Cn-8GF" secondAttribute="top" constant="14" id="opz-V5-JPe"/>
+                            <constraint firstAttribute="bottom" secondItem="Ut6-Ph-hDs" secondAttribute="bottom" constant="8" id="jPQ-3b-jcd"/>
+                            <constraint firstAttribute="trailing" secondItem="Ut6-Ph-hDs" secondAttribute="trailing" constant="8" id="oon-8U-1mh"/>
                         </constraints>
                     </view>
                 </subviews>

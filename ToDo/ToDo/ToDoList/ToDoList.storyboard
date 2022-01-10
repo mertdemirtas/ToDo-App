@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stars" translatesAutoresizingMaskIntoConstraints="NO" id="Ubp-R9-nhK">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="IMM-OK-EDp">
                                 <rect key="frame" x="0.0" y="88" width="414" height="70"/>
@@ -33,14 +32,14 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="148" height="70"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IyI-D9-ZZD">
                                                         <rect key="frame" x="148" y="0.0" width="59" height="70"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -67,14 +66,14 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="148" height="70"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfp-FY-4pE">
                                                         <rect key="frame" x="148" y="0.0" width="59" height="70"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -118,18 +117,18 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="49R-W8-RR8" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="0YU-eW-FFX"/>
                             <constraint firstItem="49R-W8-RR8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="4aR-Uv-Dv4"/>
-                            <constraint firstAttribute="bottom" secondItem="Ubp-R9-nhK" secondAttribute="bottom" id="ML9-ah-Arn"/>
-                            <constraint firstItem="Ubp-R9-nhK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="MNQ-PM-QQY"/>
-                            <constraint firstItem="Ubp-R9-nhK" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="MP0-b1-XPU"/>
-                            <constraint firstItem="Ubp-R9-nhK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="OsB-Ar-Ise"/>
+                            <constraint firstItem="Ubp-R9-nhK" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="5IR-9D-ufL"/>
+                            <constraint firstItem="Ubp-R9-nhK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Kgg-vj-al6"/>
+                            <constraint firstAttribute="bottom" secondItem="Ubp-R9-nhK" secondAttribute="bottom" id="PIx-85-RSe"/>
                             <constraint firstItem="IMM-OK-EDp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="SdZ-T0-w1B"/>
                             <constraint firstItem="49R-W8-RR8" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="UeH-RE-nw6"/>
                             <constraint firstItem="49R-W8-RR8" firstAttribute="top" secondItem="IMM-OK-EDp" secondAttribute="bottom" constant="10" id="YXX-7K-VfF"/>
                             <constraint firstItem="IMM-OK-EDp" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Ygv-IY-oMv"/>
+                            <constraint firstItem="Ubp-R9-nhK" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="jnz-9Q-90z"/>
                             <constraint firstItem="IMM-OK-EDp" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="rbt-O9-oL6"/>
                         </constraints>
                     </view>
@@ -181,8 +180,5 @@
     <resources>
         <image name="calendar.badge.clock" catalog="system" width="128" height="108"/>
         <image name="stars" width="720" height="1600"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

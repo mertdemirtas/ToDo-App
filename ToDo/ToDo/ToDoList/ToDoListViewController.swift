@@ -28,9 +28,6 @@ class ToDoListViewController: UIViewController, ToDoListViewProtocol {
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
             
-            if let error = error {
-                print("Error")
-            }
         }
     }
     
@@ -41,12 +38,15 @@ class ToDoListViewController: UIViewController, ToDoListViewProtocol {
         tableView.delegate = self
         tableView.dataSource = self
         
+        navigationController?.navigationBar.barStyle  = .black
+        navigationController?.navigationBar.barTintColor = .clear
+        navigationController?.navigationBar.tintColor = .white
+        
         doneCount.font = UIFont(name: "ChalkboardSE-Bold", size: 28)
         doneLabel.font = UIFont(name: "ChalkboardSE-Bold", size: 28)
         
         toDoCount.font = UIFont(name: "ChalkboardSE-Bold", size: 28)
         toDoLabel.font = UIFont(name: "ChalkboardSE-Bold", size: 28)
-        
     }
     
     var presenter: ToDoListPresenterProtocol!
@@ -141,6 +141,12 @@ extension ToDoListViewController: UITableViewDelegate {
                 return UISwipeActionsConfiguration(actions: [deleteAction, doneAction])
         }
     }
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        if let headerView = view as? UITableViewHeaderFooterView {
+            headerView.textLabel?.textColor = .white
+        }
+    }
   }
     
 extension ToDoListViewController: UITableViewDataSource {
@@ -165,9 +171,9 @@ extension ToDoListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section{
             case 0:
-                return "Uncompleted"
+                return "Tamamlanmayan"
             case 1:
-                return "Completed"
+                return "Tamamlanan"
             default:
                 return "Other"
         }

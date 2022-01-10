@@ -7,12 +7,14 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet weak var eventTitleTF: UITextField!
     @IBOutlet weak var eventDateDP: UIDatePicker!
-    @IBOutlet weak var eventDescriptionTF: UITextField!
     @IBOutlet weak var eventTitleLabel: UILabel!
+    @IBOutlet weak var eventDescriptionLabel: UILabel!
+    @IBOutlet weak var eventDescriptionTF: UITextView!
+    
     var addButton = UIBarButtonItem()
 
     var viewModel: EventDetailViewModelProtocol! {
@@ -29,22 +31,30 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         viewModel.viewDidLoad()
         
+        
         eventTitleTF.delegate = self
         eventDescriptionTF.delegate = self
         
-        eventTitleLabel.text = eventTitleTF.text
         eventDateDP.minimumDate = viewModel.currentDate()
 
         addButton = UIBarButtonItem(image: UIImage(systemName: "checkmark"), style: .plain, target: self, action: #selector(addButtonTapped))
         navigationItem.rightBarButtonItems = [addButton]
         
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(sender:)), name: UIResponder.keyboardWillShowNotification, object: nil);
-
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(sender:)), name: UIResponder.keyboardWillHideNotification, object: nil);
+        eventDateDP.setValue(UIColor.white, forKeyPath: "textColor")
+        
+        navigationController?.navigationBar.barStyle  = .black
+        navigationController?.navigationBar.barTintColor = .clear
+        navigationController?.navigationBar.tintColor = .white
+        
+        eventDateDP.overrideUserInterfaceStyle = .dark
         
         eventTitleTF.addTarget(self, action: #selector(didChange(textField:)), for: .editingChanged)
         eventDateDP.addTarget(self, action: #selector(datePickerChanged(picker:)), for: .valueChanged)
-        eventDescriptionTF.addTarget(self, action: #selector(didChange(textField:)), for: .editingChanged)
+        
+        eventTitleLabel.font = UIFont(name: "ChalkboardSE-Bold", size: 23)
+        eventDescriptionTF.font = UIFont(name: "ChalkboardSE-Bold", size: 17)
+        eventTitleTF.font = UIFont(name: "ChalkboardSE-Bold", size: 19)
+        eventDescriptionLabel.font = UIFont(name: "ChalkboardSE-Bold", size: 23)
         control()
         
     }
@@ -55,21 +65,16 @@ class DetailViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    func textViewDidChange(_ textView: UITextView) {
+        control()
+    }
+    
     @objc func didChange(textField: UITextField){
-        eventTitleLabel.text = eventTitleTF.text
         control()
     }
     
     @objc func datePickerChanged(picker: UIDatePicker) {
         control()
-    }
-    
-    @objc func keyboardWillShow(sender: NSNotification) {
-        self.view.frame.origin.y = -view.frame.height/2.6 // Move view view.frame.height/4.3 points upward
-    }
-
-    @objc func keyboardWillHide(sender: NSNotification) {
-         self.view.frame.origin.y = 0 // Move view to original position
     }
     
     func control(){

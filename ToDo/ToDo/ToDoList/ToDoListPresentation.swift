@@ -23,6 +23,5 @@ struct ToDoListPresentation {
     
     init(event: EventModel) {
         self.init(title: event.title, date: event.date, isDone: event.isDone, createDate: event.createDate)
-        
     }
 }
