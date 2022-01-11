@@ -33,6 +33,7 @@
 		40A18E13271E092200254C9F /* EventDetailPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A18E12271E092200254C9F /* EventDetailPresentation.swift */; };
 		40A18E15271E09FE00254C9F /* EventDetailContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A18E14271E09FE00254C9F /* EventDetailContracts.swift */; };
 		40A9DD5C272366230066B9D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A9DD5B272366230066B9D8 /* Images.xcassets */; };
+		40AE9B42278DF4520030B551 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE9B41278DF4520030B551 /* UIColor+.swift */; };
 		40D30587270DEF9D00CAEE28 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D30586270DEF9D00CAEE28 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		40A18E12271E092200254C9F /* EventDetailPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailPresentation.swift; sourceTree = "<group>"; };
 		40A18E14271E09FE00254C9F /* EventDetailContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailContracts.swift; sourceTree = "<group>"; };
 		40A9DD5B272366230066B9D8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		40AE9B41278DF4520030B551 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		40D30586270DEF9D00CAEE28 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +138,7 @@
 		40470648270AF41F0004FCE2 /* ToDo */ = {
 			isa = PBXGroup;
 			children = (
+				40AE9B40278DF43D0030B551 /* UIColor+ */,
 				40D30585270DEF8F00CAEE28 /* Managers */,
 				40893B12270C874100D46FC2 /* Entities */,
 				40470649270AF42A0004FCE2 /* ToDoList */,
@@ -188,6 +191,14 @@
 				40893B13270C875C00D46FC2 /* EventModel.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		40AE9B40278DF43D0030B551 /* UIColor+ */ = {
+			isa = PBXGroup;
+			children = (
+				40AE9B41278DF4520030B551 /* UIColor+.swift */,
+			);
+			path = "UIColor+";
 			sourceTree = "<group>";
 		};
 		40D30585270DEF8F00CAEE28 /* Managers */ = {
@@ -293,6 +304,7 @@
 				40470658270AF6180004FCE2 /* AppRouter.swift in Sources */,
 				4047065C270AF90A0004FCE2 /* ToDoListContracts.swift in Sources */,
 				40470634270AF3C70004FCE2 /* SceneDelegate.swift in Sources */,
+				40AE9B42278DF4520030B551 /* UIColor+.swift in Sources */,
 				40893B18270C8ED100D46FC2 /* ToDoListInteractor.swift in Sources */,
 				40A18E15271E09FE00254C9F /* EventDetailContracts.swift in Sources */,
 				40893B14270C875C00D46FC2 /* EventModel.swift in Sources */,

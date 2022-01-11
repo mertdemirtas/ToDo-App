@@ -17,8 +17,7 @@ class EventTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         cellTitle.font = UIFont(name: "ChalkboardSE-Bold", size: 20)
-        cellDate.backgroundColor = .clear
-        cellDate.overrideUserInterfaceStyle = .light
+        cellDate.overrideUserInterfaceStyle = .dark
     }
     
     override func layoutSubviews() {

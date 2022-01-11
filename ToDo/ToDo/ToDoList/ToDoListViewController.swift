@@ -27,7 +27,6 @@ class ToDoListViewController: UIViewController, ToDoListViewProtocol {
         
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
-            
         }
     }
     
@@ -186,12 +185,12 @@ extension ToDoListViewController: UITableViewDataSource {
             case 0:
                 cell.cellTitle.text = eventsWithSections[indexPath.section][indexPath.row].title
                 cell.cellDate.date = eventsWithSections[indexPath.section][indexPath.row].date
-                cell.cellView.backgroundColor = UIColor.systemBlue
+            cell.cellView.backgroundColor = UIColor(r: 36, g: 33, b: 79, alpha: 0.8)
                 return cell
             case 1:
                 cell.cellTitle.text = eventsWithSections[indexPath.section][indexPath.row].title
                 cell.cellDate.date = eventsWithSections[indexPath.section][indexPath.row].date
-                cell.cellView.backgroundColor = UIColor.systemIndigo
+            cell.cellView.backgroundColor = UIColor(r: 76, g: 23, b: 90, alpha: 0.8)
                 return cell
             default:
                 return cell

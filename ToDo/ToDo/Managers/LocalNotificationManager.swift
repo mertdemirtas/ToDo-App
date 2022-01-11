@@ -34,9 +34,10 @@ class LocalNotificationManager: NotificationManagerProtocol , ObservableObject {
 
         let content = UNMutableNotificationContent()
           
-        content.title = "It's time for " + "\(data.title)"
+        content.title = "Vakit Geldi!" + "\(data.title)"
         content.body = data.description
         content.categoryIdentifier = "To Do App"
+        content.sound = UNNotificationSound.default
 
         var trigger: UNNotificationTrigger?
           let date = data.date
