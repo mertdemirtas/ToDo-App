@@ -144,6 +144,9 @@ extension ToDoListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let headerView = view as? UITableViewHeaderFooterView {
             headerView.textLabel?.textColor = .white
+            headerView.textLabel?.font = UIFont(name: "ChalkboardSE-Bold", size: 20)
+            headerView.textLabel?.textAlignment = .center
+            headerView.textLabel?.textColor = .orange
         }
     }
   }
@@ -170,7 +173,7 @@ extension ToDoListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section{
             case 0:
-                return "Tamamlanmayan"
+                return "Tamamlanacak"
             case 1:
                 return "Tamamlanan"
             default:

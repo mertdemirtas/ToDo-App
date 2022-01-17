@@ -32,7 +32,6 @@
 		40A18E11271E08C900254C9F /* EventDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A18E10271E08C900254C9F /* EventDetailViewModel.swift */; };
 		40A18E13271E092200254C9F /* EventDetailPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A18E12271E092200254C9F /* EventDetailPresentation.swift */; };
 		40A18E15271E09FE00254C9F /* EventDetailContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A18E14271E09FE00254C9F /* EventDetailContracts.swift */; };
-		40A9DD5C272366230066B9D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A9DD5B272366230066B9D8 /* Images.xcassets */; };
 		40AE9B42278DF4520030B551 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE9B41278DF4520030B551 /* UIColor+.swift */; };
 		40D30587270DEF9D00CAEE28 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D30586270DEF9D00CAEE28 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
@@ -78,7 +77,6 @@
 		40A18E10271E08C900254C9F /* EventDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewModel.swift; sourceTree = "<group>"; };
 		40A18E12271E092200254C9F /* EventDetailPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailPresentation.swift; sourceTree = "<group>"; };
 		40A18E14271E09FE00254C9F /* EventDetailContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailContracts.swift; sourceTree = "<group>"; };
-		40A9DD5B272366230066B9D8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		40AE9B41278DF4520030B551 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		40D30586270DEF9D00CAEE28 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,7 +128,6 @@
 				4047063F270AF3C80004FCE2 /* LaunchScreen.storyboard */,
 				40470642270AF3C80004FCE2 /* Info.plist */,
 				4047063A270AF3C70004FCE2 /* ToDo.xcdatamodeld */,
-				40A9DD5B272366230066B9D8 /* Images.xcassets */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -276,7 +273,6 @@
 				4080F4E7270E5CD100BA9857 /* EventTableViewCell.xib in Resources */,
 				40470663270AFBD30004FCE2 /* ToDoList.storyboard in Resources */,
 				402A99B1271B1B6000FFE67A /* DetailViewController.xib in Resources */,
-				40A9DD5C272366230066B9D8 /* Images.xcassets in Resources */,
 				40470641270AF3C80004FCE2 /* LaunchScreen.storyboard in Resources */,
 				4047063E270AF3C80004FCE2 /* Assets.xcassets in Resources */,
 			);
